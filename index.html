@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>UHD Movies</title>
+<title>Premium</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -26,34 +26,20 @@ body {
 .logo {
     font-size: 22px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.logo span {
-    background: #f4c20d;
-    padding: 4px 8px;
-    margin-right: 5px;
 }
 
 /* Menu */
 .menu {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .menu a {
     text-decoration: none;
     color: #333;
     font-size: 14px;
-}
-
-/* Icons */
-.icons {
-    display: flex;
-    gap: 15px;
-    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
 }
 </style>
@@ -63,23 +49,31 @@ body {
 
 <div class="navbar">
     <div class="logo">
-        <span>UHD</span> MOVIES
+        PREMIUM
     </div>
 
     <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">2160p HEVC</a>
-        <a href="#">4K HDR</a>
-        <a href="#">1080p 10Bit</a>
-        <a href="#">Dual Audio Movies</a>
-        <a href="#">English Movies</a>
-        <a href="#">IMAX</a>
-    </div>
-
-    <div class="icons">
-        🔍 ☰
+        <a onclick="checkPassword('TANGO')">TANGO</a>
+        <a onclick="checkPassword('CHAMET')">CHAMET</a>
+        <a onclick="checkPassword('VIRAL')">VIRAL</a>
+        <a onclick="checkPassword('FACE')">FACE</a>
+        <a onclick="checkPassword('STRIP')">STRIP</a>
+        <a onclick="checkPassword('YOUTUBE')">YOUTUBE</a>
+        <a onclick="checkPassword('MOVIE WEB SERIES')">MOVIE WEB SERIES</a>
     </div>
 </div>
+
+<script>
+function checkPassword(section) {
+    let pass = prompt("Enter Password:");
+
+    if (pass === "fun") {
+        alert(section + " opened successfully!");
+    } else {
+        alert("Wrong Password!");
+    }
+}
+</script>
 
 </body>
 </html>
