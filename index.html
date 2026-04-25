@@ -68,7 +68,39 @@ function checkPassword(section) {
     let pass = prompt("Enter Password:");
 
     if (pass === "fun") {
-        alert(section + " opened successfully!");
+
+        switch(section) {
+            case "TANGO":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/tango.html";
+                break;
+            case "CHAMET":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/chamet.html";
+                break;
+            case "VIRAL":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/viral.html";
+                break;
+            case "FACE":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/face.html";
+                break;
+            case "MISMERZING":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/mismerzing.html";
+                break;
+            case "MOVIE WEB SERIES":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/movie-web-series.html";
+                break;
+            case "YOUTUBE":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/youtube.html";
+                break;
+            case "STRIP":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/strip.html";
+                break;
+            case "SPRAY":
+                window.location.href = "https://premiumgit.blogspot.com/2026/04/spray.html";
+                break;
+            default:
+                alert(section + " opened successfully!");
+        }
+
     } else {
         alert("Wrong Password!");
     }
